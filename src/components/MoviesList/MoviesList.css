@@ -1,0 +1,10 @@
+.moviesList {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    background-color: darkred;
+    color: indianred;
+    height: 100vh;
+}

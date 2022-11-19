@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.layoutWrap {
+    margin: 0 auto;
+    background-color: darkred;
+    height: 100vh;
+}

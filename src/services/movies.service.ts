@@ -13,6 +13,6 @@ export const movieService = {
 
 
     getMoviesByName: (page: number, name: string) =>
-        axiosService.get<{ results: IMovie[] }>(`/search/movie?&query=${name}&page${page}`)
+        axiosService.get<{ results: IMovie[] }>(`/search/movie?api_key=${apiKey}&query=${name}&page${page}`)
             .then(value => value.data.results)
 }

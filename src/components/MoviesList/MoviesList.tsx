@@ -4,6 +4,7 @@ import {getAllMovies} from "../../store/slices/movies.slice";
 import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 
 import './MoviesList.css'
+import {PaginationMovies} from "./PaginationMovies";
 
 
 const MoviesList : FC = () => {
@@ -20,7 +21,7 @@ const MoviesList : FC = () => {
     return (
         <div className={'moviesList'}>
             {allMovies.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)}
-
+            <PaginationMovies/>
         </div>
 
 

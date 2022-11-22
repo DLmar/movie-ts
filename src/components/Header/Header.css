@@ -3,13 +3,12 @@
     background-color: darkred;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 630px;
     width: 100%;
-    justify-content: center;
 }
 
 
-.header img{
+.image img{
     width: 100px;
     height: 100px;
 }

@@ -12,10 +12,10 @@ const MoviesListCard: FC<{ movie: IMovie }> = ({movie}) => {
 
     return (
             <div className={'card'}>
-                    <Link to={id.toString()}>
+                <Link to={`/movie/${movie.id.toString()}`}>
                         <img src={baseUrlImg+poster_path} alt={title}/>
                         <div className={'cardTitle'}>
-                            <h2>{<title></title>}</h2>
+                            <h2>{title}</h2>
                         </div>
                     </Link>
                 <div className={'rating'}>

@@ -1,0 +1,6 @@
+.companies{
+    display: flex;
+    width: 80%;
+    column-gap: 10px;
+}
+

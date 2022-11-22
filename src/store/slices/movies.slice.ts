@@ -42,7 +42,7 @@ const initialState: IMovieState = {
 
 export const getAllMovies = createAsyncThunk(
     'movieSlice/getAllMovies',
-    async (page:number, {dispatch}) => {
+    async (page: number, {dispatch}) => {
         const data = await movieService.getAll(page)
         dispatch(setAllMovies(data))
     }
@@ -52,7 +52,7 @@ export const getMovieDetails = createAsyncThunk(
     'movieSlice/getMovieDetails',
     async (id: number, {dispatch}) => {
         const {data} = await movieService.getById(id)
-        dispatch(setMovieDetails({movieDetails: data }))
+        dispatch(setMovieDetails({movieDetails: data}))
     }
 )
 
@@ -60,6 +60,14 @@ export const getMoviesPage = createAsyncThunk(
     'movieSlice/getMoviesPage',
     async (page: number, {dispatch}) => {
         await dispatch(setPage(page))
+    }
+)
+
+export const getMoviesByName = createAsyncThunk(
+    'movieSlice/getMoviesByName',
+    async ({ page, name } : { page: number, name: string }, { dispatch }) => {
+        const data = await movieService.getMoviesByName(page,name)
+        dispatch(setMoviesByName(data))
     }
 )
 

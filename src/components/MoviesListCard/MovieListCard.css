@@ -3,14 +3,12 @@
     border-radius: 15px;
     color: indianred;
     box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
-    height: 400px;
 }
 
 .card img {
     width: 250px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 300px;
 }
 
 .card h2 {

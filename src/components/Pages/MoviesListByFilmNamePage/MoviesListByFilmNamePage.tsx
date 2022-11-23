@@ -1,7 +1,7 @@
 import {FC} from "react";
 import {useAppSelector} from "../../../hooks/hooks";
 import {MoviesListCard} from "../../MoviesListCard/MoviesListCard";
-import {PaginationMovies} from "../../MoviesList/PaginationMovies";
+
 
 const MoviesListByFilmNamePage: FC = () => {
 

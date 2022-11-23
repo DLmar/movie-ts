@@ -71,6 +71,7 @@ export const getMoviesByName = createAsyncThunk(
     }
 )
 
+
 export const movieSlice = createSlice({
     name: 'movieSlice',
     initialState,

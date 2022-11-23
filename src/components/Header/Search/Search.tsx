@@ -3,6 +3,8 @@ import {useAppDispatch, useAppSelector} from "../../../hooks/hooks";
 import {useNavigate} from "react-router-dom";
 import {getMoviesByName} from "../../../store/slices/movies.slice";
 
+import '../Header.css'
+
 const Search = () => {
 
     const filmName = createRef<any>();

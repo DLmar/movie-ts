@@ -5,7 +5,7 @@ import {getMoviesPage} from "../../store/slices/movies.slice";
 
 import './MoviesList.css'
 
-const PaginationMovies: FC= () => {
+const PaginationMovies: FC = () => {
 
     let dispatch = useAppDispatch();
 

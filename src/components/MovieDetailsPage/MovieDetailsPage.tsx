@@ -36,7 +36,6 @@ const MovieDetailsPage:FC = () => {
     } = movieDetails;
 
     return (
-        <div>
             <div className={'content-section'}>
                 <div className={'container'}>
                     <div className={'row'}>
@@ -69,8 +68,6 @@ const MovieDetailsPage:FC = () => {
                 </div>
             </div>
 
-
-        </div>
     );
 };
 

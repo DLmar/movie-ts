@@ -13,7 +13,6 @@ const App: FC = () => {
                     <Route path={'/movie/:id'} element={<MovieDetailsPage/>}/>
                     <Route path={'/genre/:id'} element={<MoviesListByGenrePage/>}/>
                     <Route path={'/byFilmName'} element={<MoviesListByFilmNamePage/>}/>
-
                 </Route>
             </Routes>
         </div>

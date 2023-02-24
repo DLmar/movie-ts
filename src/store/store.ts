@@ -6,7 +6,7 @@ import movieReducer from "./slices/movies.slice";
 
 const rootReducer = combineReducers({
     movieReducer,
-    genreReducer
+    genreReducer,
 })
 
 export const setUpStore = () => configureStore({

@@ -1,10 +1,12 @@
 import {FC, useEffect} from "react";
 import {useAppDispatch, useAppSelector} from "../../hooks/hooks";
+
 import {getAllMovies} from "../../store/slices/movies.slice";
 import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
+import {PaginationMovies} from "./PaginationMovies";
 
 import './MoviesList.css'
-import {PaginationMovies} from "./PaginationMovies";
+
 
 
 const MoviesList : FC = () => {
